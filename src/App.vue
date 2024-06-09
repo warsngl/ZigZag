@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template lang='pug'>
-TheNavbar.mb-8
+TheNavbar
 .flex.flex-col.items-center
   router-view.w-full
 </template>
@@ -16,10 +16,7 @@ TheNavbar.mb-8
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #072227;
   min-width: 100vw;
   min-height: 100vh;
-  padding: 20px;
-  background: #d3dedc;
 }
 </style>

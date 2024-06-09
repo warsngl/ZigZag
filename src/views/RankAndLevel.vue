@@ -17,12 +17,7 @@
       <div class="font-bold text-white uppercase">Star Recruit</div>
       <div class="font-medium lowercase text-white text-opacity-50">LVL 1</div>
     </div>
-    <div
-      class="flex gap-5 self-stretch mt-6 text-sm text-center text-white rounded bg-slate-300"
-    >
-      <div class="shrink-0 h-6 bg-purple-800 rounded w-[73px]"></div>
-      <div class="flex-auto my-auto">Levels left 1/8</div>
-    </div>
+    <ProgressBar message="Levels left 1/8" progress=70></ProgressBar>
     <div
       class="flex gap-5 justify-center self-stretch p-2.5 mt-6 w-full text-white rounded-xl bg-slate-300 bg-opacity-10"
     >
@@ -44,11 +39,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="justify-center px-5 py-5 text-base font-medium leading-6 text-center whitespace-nowrap bg-purple-800 rounded-xl"
-      >
-        Collect
-      </div>
+      <BlueButton message="Collect"></BlueButton>
     </div>
     <div
       class="flex gap-5 justify-center self-stretch p-2.5 mt-1.5 w-full text-white rounded-xl bg-slate-300 bg-opacity-10"
@@ -64,14 +55,16 @@
           <div class="mt-1 text-sm text-center">4/4 available</div>
         </div>
       </div>
-      <div
-        class="justify-center px-5 py-5 text-base font-medium leading-6 text-center whitespace-nowrap bg-purple-800 rounded-xl"
-      >
-        Collect
-      </div>
+      <BlueButton message="Collect"></BlueButton>
     </div>
-    <div
-      class="shrink-0 mt-32 h-1.5 bg-white bg-opacity-80 rounded-[50px] w-[180px]"
-    ></div>
   </div>
 </template>
+
+<script>
+import BlueButton from "@/BlueButton.vue";
+import ProgressBar from "@/ProgressBar.vue";
+export default {
+  data: () => ({}),
+  components: { ProgressBar, BlueButton },
+};
+</script>

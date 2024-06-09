@@ -67,60 +67,13 @@
     >
       <div class="shrink-0 h-2.5 rounded-[50px]"></div>
     </div>
-    <div class="flex gap-1 mx-4 mt-4 text-xs text-white whitespace-nowrap">
-      <div
-        class="flex flex-col flex-1 justify-center px-5 py-3 rounded-lg bg-slate-300 bg-opacity-10"
-      >
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/c695d3a3050f70fc640c87311931e8cdb0aa14c2cf2d8b845e35bed5fef97d84?apiKey=488b3769a36349598ebb90c1530b604a&"
-          class="self-center aspect-[1.45] w-[35px]"
-        />
-        <div class="mt-1">Mining</div>
-      </div>
-      <div
-        class="flex flex-col flex-1 justify-center px-5 py-3 rounded-lg bg-slate-300 bg-opacity-10"
-      >
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/4f3cd82039913e0406d16cfc4a1269a009e94a5acb8e4bea56c7a398cead7582?apiKey=488b3769a36349598ebb90c1530b604a&"
-          class="self-center aspect-[1.59] w-[38px]"
-        />
-        <div class="mt-1">Friends</div>
-      </div>
-      <div
-        class="flex flex-col flex-1 justify-center px-6 py-3 rounded-lg bg-slate-300 bg-opacity-10"
-      >
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/164dea5f163026d099f5bd546d3af413451ada18ab83803e2b5aa518633822af?apiKey=488b3769a36349598ebb90c1530b604a&"
-          class="self-center aspect-[1.12] w-[27px]"
-        />
-        <div class="mt-1">Store</div>
-      </div>
-      <div
-        class="flex flex-col flex-1 justify-center px-6 py-3 rounded-lg bg-slate-300 bg-opacity-10"
-      >
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/96b7b99efae7cc9a3b8f86bf1b88f6fdd17e504c916e28523ffa68d30c8738fe?apiKey=488b3769a36349598ebb90c1530b604a&"
-          class="self-center aspect-[1.37] w-[33px]"
-        />
-        <div class="mt-1">Rating</div>
-      </div>
-      <div
-        class="flex flex-col flex-1 justify-center px-6 py-3 rounded-lg bg-slate-300 bg-opacity-10"
-      >
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/d26acf8a5402bdcb85cfda933af11bafd05c70e5a671e37128a32c42a8b67384?apiKey=488b3769a36349598ebb90c1530b604a&"
-          class="self-center aspect-[1.2] w-[29px]"
-        />
-        <div class="mt-1">Tasks</div>
-      </div>
-    </div>
-    <div
-      class="shrink-0 self-center mt-4 h-1.5 bg-white bg-opacity-80 rounded-[50px] w-[180px]"
-    ></div>
+    <toolbar></toolbar>
   </div>
 </template>
+
+<script>
+import toolbar from "@/ToolBar.vue";
+export default {
+  components: { toolbar },
+};
+</script>
